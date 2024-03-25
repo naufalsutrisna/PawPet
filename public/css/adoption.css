@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #FFF8F5;
+    --secondary-color: #D0E4FF;
+    --tertiary-color: #598AC1; /* Corrected typo in variable name */
+    --blue-color: #2B7BBD;
+    --brown-color: #E2C0A5;
+    --red-color: #FFB4AB;
+    --white-color: #FFF;
+    --dark-color: #001D34;
+    --dark-secondary: #5A422D;
+    --container-width: 1440px;
+    --container-height: 994px;
+}
+
+body {
+    background-color: var(--white-color);
+    margin: 0; /* Remove default body margin */
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    width: 1000px;
+    max-width: 100%; /* Make the container responsive */
+    height: 280px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: var(--primary-color);
+    position: relative;
+    margin: 0 auto 42px; /* Center the container on larger screens */
+}
+
+.pet-info {
+    flex-grow: 1;
+    padding: 20px;
+    position: relative;
+}
+
+.pet-info p:nth-child(2) {
+    display: inline-block; /* Make the background size the content width */
+    background: var(--material-theme-ref-secondary-secondary-80, #E2C0A5);
+    border-radius: 10px;
+    padding: 7px;
+    margin-bottom: 5px;
+}
+
+.pet-info p {
+    margin: 0;
+}
+
+.pet-info h2 {
+    color: var(--material-theme-key-colors-tertiary, #7FA0C5);
+    font-size: 36px;
+    margin-top: 0; /* Ubah nilai margin-top sesuai kebutuhan */
+    margin-bottom: 5px;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--blue-color);
+    text-align: center;
+    color: var(--white-color);
+    display: flex; /* Menambahkan display flex */
+    align-items: center; /* Memusatkan secara vertikal */
+    justify-content: center; /* Memusatkan secara horizontal */
+}
+
+p {
+    color: var(--dark-secondary);
+    font-size: 18px;
+}
+
+.big-button {
+    font-size: 24px;
+    width: 250px;
+    height: 80px;
+    border-radius: 40px;
+    display: block;
+    margin: 60px auto 72px;
+}
+
+.small-button {
+    position: absolute;
+    bottom: 21px;
+    right: 28px;
+    font-size: 22px;
+    width: 216px;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+
+.container img {
+    margin-top: 26px;
+    margin-bottom: 54px;
+    margin-left: 42px;
+    margin-right: 42px;
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 200px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .content-wrapper {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+
+    .container {
+        width: 100%;
+        border-radius: 0; /* Remove border-radius on smaller screens */
+    }
+
+    .pet-info {
+        padding: 10px;
+    }
+
+    .container img {
+        margin: 10px;
+    }
+
+    .small-button {
+        position: static;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Mengubah arah flex menjadi column */
+        height: auto; /* Menghapus tinggi tetap pada container */
+        align-items: center; /* Memusatkan elemen dalam mode column */
+    }
+
+    .pet-info {
+        order: 2; /* Mengubah urutan elemen pet-info menjadi setelah gambar */
+        text-align: center; /* Memusatkan teks pada elemen pet-info */
+    }
+
+    .container img {
+        margin: 10px auto; /* Menengahkan gambar */
+    }
+
+    .small-button {
+        position: static;
+        margin-top: 10px;
+        order: 3; /* Mengubah urutan elemen button di mode column */
+    }
+}

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #FFF8F5;
+  --secondary-color: #D0E4FF;
+  --tertiary-color: #598AC1;
+  --blue-color: #2B7BBD;
+  --brown-color: #E2C0A5;
+  --red-color: #FFB4AB;
+  --white-color: #FFF;
+  --dark-color: #001D34;
+  --dark-secondary: #5A422D;
+  --container-width: 1440px;
+  --container-height: 994px;
+}
+
+.container {
+  width: 1140px;
+  height: 799px;
+  border-radius: 20px;
+  margin: 71px 150px 103px 150px;
+  background-color: var(--primary-color);
+}
+
+label {
+  color: var(--material-theme-sys-light-secondary, #735943);
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px;
+}
+
+input:disabled {
+  border-radius: 15px;
+  height: 63px;
+  border: 1px solid var(--material-theme-ref-neutral-neutral-40, #655D58);
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px;
+  color: var(--material-theme-black, #514f4f);
+}
+
+img {
+  margin: 60px 60px 60px 55px;
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  color: var(--material-theme-sys-light-secondary, #735943);
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px;
+}
+
+.btn-adopsi {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  border-radius: 40px;
+  display: flex;
+  width: 300px;
+  height: 70px;
+  padding: 26px 53px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
+  gap: 10px;
+  flex-shrink: 0;
+  color: var(--white-color);
+  background-color: var(--brown-color);
+}
+
+.btn-action {
+  font-family: 'Poppins', sans-serif;
+  color: var(--material-theme-white, #FFF);
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  display: flex;
+  width: 180px;
+  height: 70px;
+  padding: 26px 53px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  background: var(--material-theme-ref-tertiary-tertiary-50, #2B7BBD);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
